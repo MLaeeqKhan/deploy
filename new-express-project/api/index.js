@@ -13,11 +13,7 @@ app.get("/", (req, res) =>{
    console.log("DB Connection");
 
 
-    connection().then(() => {
-      
-    }).catch((err)=>{
-      res.send("Error connecting to the database:", err);
-    });
+   
 
     res.send("Backend on Vercel");
 
