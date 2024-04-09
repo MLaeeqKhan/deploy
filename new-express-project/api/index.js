@@ -9,8 +9,7 @@ const connection = require("../DB/conn");
 
 app.get("/", (req, res) =>{
     
-    res.send("DB Connection");
-
+    
 
     connection().then(() => {
         res.send("database Sucessfully connected");
