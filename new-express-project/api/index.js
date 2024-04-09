@@ -7,18 +7,15 @@ const connection = require("../DB/conn");
 
 
 
-app.get("/", (req, res) =>{
-    
-//     res.send("DB Connection");
-//    console.log("DB Connection");
+console.log("DB Connection");
 
 
+ connection().then(() => {
    
+ }).catch((err)=>{
+   console.log("Error connecting to the database:", err);
+ });
 
-    res.send("Backend on Vercel");
-
-} 
-);
 
 app.listen(3000, () => console.log("Server ready on port 3000."));
 
