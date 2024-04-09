@@ -9,8 +9,8 @@ const connection = require("../DB/conn");
 
 app.get("/", (req, res) =>{
     
-    res.send("DB Connection");
-   console.log("DB Connection");
+//     res.send("DB Connection");
+//    console.log("DB Connection");
 
 
    
