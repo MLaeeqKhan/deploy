@@ -10,12 +10,8 @@ const connection = require("../DB/conn");
 console.log("DB Connection");
 
 
- connection().then(() => {
-   
- }).catch((err)=>{
-   console.log("Error connecting to the database:", err);
- });
 
+app.use("/",connection);
 
 app.listen(3000, () => console.log("Server ready on port 3000."));
 
