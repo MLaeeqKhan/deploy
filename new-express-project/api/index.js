@@ -13,7 +13,7 @@ app.get("/", (req, res) =>{
 
 
     connection().then(() => {
-        
+        res.send("database Sucessfully connected");
     }).catch((err)=>{
       res.send("Error connecting to the database:", err);
     });
