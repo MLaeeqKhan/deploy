@@ -8,12 +8,13 @@ const connection = require("../DB/conn");
 
 
 app.get("/", (req, res) =>{
+    
     connection().then(() => {
    
     }).catch((err)=>{
-      console.error("Error connecting to the database:", err);
+      res.send("Error connecting to the database:", err);
     });
-    
+
     res.send("Backend on Vercel");
 
 } 
