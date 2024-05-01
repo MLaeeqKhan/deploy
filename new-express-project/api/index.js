@@ -10,7 +10,6 @@ connection().then(() => {
 
 
 
-connection();
 app.get("/", (req, res) => res.send("Backend on Vercel"));
 
 app.listen(3000, () => console.log("Server ready on port 3000."));
