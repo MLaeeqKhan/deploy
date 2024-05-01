@@ -1,12 +1,6 @@
 const express = require("express");
 const app = express();
-// const connection = require("../DB/conn");
 
-// connection().then(() => {
-   
-//    }).catch((err)=>{
-//      console.error("Error connecting to the database:", err);
-//    });
 
 
 
